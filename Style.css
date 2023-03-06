@@ -1,0 +1,434 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sofia+Sans:wght@100&display=swap');
+
+body{
+    animation: TransIn 0.5s ;
+}
+
+
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+} 
+
+header{
+    background-color: #E9E8E8;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 120px;
+    
+}
+
+
+
+.logo{
+    text-decoration: none;
+    color: #913175; 
+    text-transform:uppercase;
+    font-weight: 700;
+    font-size: 1.8em;
+}
+
+.navigation a ,.src-btn{
+    color: #CD5888;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 500;
+    padding-left: 30px;
+    transition: 0.7s ease;
+    padding:5px;
+    border-radius: 10px;
+    
+    padding:7px;
+    
+}
+
+.navigation a:hover{
+    color: #913175 ;
+    background-color: #20262E;
+    text-decoration:none ;
+    border-radius: 10px;
+    border: 2px #e794b6 solid;
+    padding:7px;
+    
+}
+
+
+section{
+    padding: 100px 200px;
+    
+}
+
+.main{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items:  center;
+    background: url(Photos/BackGround.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    animation: TransIn 0.3s;
+
+}
+
+.main h2{
+    color: #20262E;
+    font-size: 1.9em;
+    font-weight: 500;
+}
+
+.main h2 span{
+    display: inline-block;
+    margin-top: 20px;
+    color: #913175;
+    font-size: 2.7em;
+    font-weight: 900;
+    margin-left: -10px;
+}
+
+.main h3 {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    color: #CD5888;
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: 1px;
+
+}
+
+
+
+.main-btn{
+    color: #CD5888;
+    background-color: #20262E;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 600;
+    display: inline-block;
+    padding: 0.9375em 2.1875em;
+    letter-spacing: 2px;
+    border-radius: 10px;
+    margin-top: 5px;
+    margin-bottom: 40px;
+    transition: 0.65s ease;
+}
+
+.main-btn:hover{
+    color: #913175;
+    background-color: #16181b;
+    transform: scale(1.15,1.15);
+
+}
+
+
+.title{
+    display: flex;
+    justify-content: center ;
+    color: #913175;
+    font-size: 2.5em;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.Card {
+    background-color:#fff;
+    border: 5px solid #913175 ;
+    width: 21.25em;
+    box-shadow: 0 10px 25px rgba(1 1 1 / 15%);
+    border-radius: 15px;
+    padding: 25px;
+    margin: 15px;
+    transition: 0.5s ease;
+    text-align: center;
+
+}
+
+.Card:hover{
+    transform: scale(1.15 , 1.15);
+}
+
+.icon{
+    color: #913175;
+    font-size: 8em;
+    text-align: center;
+}
+
+
+.info {
+    text-align: center;
+}
+.info h3 {
+
+    color: #CD5888;
+    font-size: 1.2em;
+    font-weight: 700;
+    margin: 10px;
+}
+
+@keyframes TransIn{
+    from {
+        opacity: 0;
+        transform: rotateX(-10deg);
+    }
+
+    to { 
+        opacity: 1;
+        transform: rotateX(-10deg);
+    }
+}
+
+body{
+    scroll-behavior: smooth;
+}
+
+.projects {
+    background-color: #20262E;
+}
+
+.project .content {
+    margin-top: 30px;
+}
+
+.project-card {
+    background-color: #fff;
+    border: 5px solid #913175 ;
+    min-height: 14em;
+    width: 23em;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 20px;
+    transition: 0.7s ease;
+}
+
+
+.project-card:hover {
+    transform: scale(1.15 , 1.15);
+}
+.project-card:hover img{
+    opacity: 0.9;
+}
+
+.project-picture img{
+    width: 100%;
+    image-rendering: pixelated;
+}
+
+.project-info {
+    padding: 1em;
+}
+
+.project-category {
+    font-size: 1em;
+    color: #913175;
+}
+
+
+.project-title{
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-top: 10px;
+}
+
+.more-details {
+    text-decoration: none;
+    color: #e794b6;
+}
+
+.contact .icon{
+    font-size: 4.5em;
+}
+
+.contact-info  {
+    font-size: 1.3em;
+    margin-top: 10px;
+    text-align: center;
+    color: #913175;
+}
+.contact-info p {
+    color: #16181b;
+    font-size: 1.5em;
+}
+
+.content .content-card{
+    background-color: #fff;
+    border: 10px solid #913175 ;
+    min-height: 14em;
+    width: 23em;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 20px;
+    transition: 0.7s ease;
+}
+.content .content-card:hover{
+    transform: scale(1.2);
+    transform: rotate(5,-5);
+}
+
+.deco-none {
+    text-decoration: none;
+    color: #20262E;
+}
+
+.aboutmecardcontainer {
+    display: flex;
+    justify-content: center;
+}
+
+.abt-me-text {
+    font-size:1.2em;
+    font-weight: 600;
+    color: #913175;
+    word-spacing: 3px;
+}
+.Aboutme {
+    background-color: #20262E;
+    
+}
+
+.img {
+    width: 100%;
+}
+.abt-Card {
+    background-color:#fff;
+    border: 5px solid #CD5888 ;
+    width: 21.25em;
+    box-shadow: 0 10px 25px rgba(1 1 1 / 15%);
+    border-radius: 20px;
+    padding: 25px;
+    margin: 15px;
+    transition: 0.7s ease;
+    text-align: center;
+    color:#913175;
+    background: linear-gradient(180deg, rgba(116,4,203,0.6) 0%, rgba(0,127,255,0.6) 100%);
+    
+}       
+.abt-Card:hover {
+    transform: rotate(3deg) scale(1.5);
+    transition: 0.3 ease;
+    background: linear-gradient(180deg, rgba(0,127,255,1) 0%, rgba(116,4,203,1) 100%);
+    color: #e70d68;
+    font-weight:700;
+    
+}
+.cer-title {
+    display: flex;
+    justify-content: center ;
+    text-align: center;
+    color: #913175;
+    font-size: 2.5em;
+    font-weight: 800;
+    margin-bottom: 30px;
+    
+}
+
+.cer-more {
+    text-align: center;
+    color: #e794b6;
+    font-size: 2em;
+    position: absolute;
+    bottom:90;
+
+}
+.Certification-card {
+    transform: scale(1.3);
+    background-color:#fff;
+    border: 5px solid #913175 ;
+    width: 21.25em;
+    box-shadow: 0 10px 25px rgba(1 1 1 / 15%);
+    border-radius: 15px;
+    padding: 25px;
+    margin: 10px;
+    transition: 0.5s ease;
+    text-align: center;
+    
+}
+.Certification-card:hover{
+    transform: scale(1.6);
+}
+.Certifications {
+    display: flex;
+    justify-content: center;
+}
+
+.Certification-card p {
+    margin-top: 5px;
+}
+.footer {
+    background-color: #20262E;
+    color: #CD5888;
+    padding: 1.4em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-title {
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+.footer-title span{
+    color: #fff;
+}
+
+@media (max-width:900px) {
+    header{
+        padding: 12px 20px;
+    }
+    .navigation a{
+        padding-left: 10px;
+    }
+
+    .title{
+        font-size: 1.8em;
+    }
+
+    section{
+        padding: 80px 20px;
+    }
+
+    .main h2 {
+        font-size: 1em;
+    }
+    .main h3 {
+        font-size: 1.6em;
+    }
+
+    .content{
+        flex-direction: column;
+    }
+}
+
+@media (max-width:641px){
+    body{
+        font-size: 12px;
+    }
+    .main h2 {
+        font-size: 0.8em;
+    }
+    .main h3 {
+        font-size: 1.4em;
+    }
+}
+
+@media (max-width:300px){
+    body{
+        font-size:10px;
+    }
+     
+}
